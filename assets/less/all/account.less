@@ -1,0 +1,73 @@
+@import "common/mixin.less";
+.accounttitle{
+    padding: 30px 0 10px 0;
+    .name{
+        float: left;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4A4A4A;
+    }
+    .accountBtn{
+        width: 100px;
+        height: 30px;
+        float: right;
+        border-radius: 4px;
+       
+    } 
+    .a-Border{
+        border: solid 1px @c_DC2728;
+        color: @c_DC2728;
+         a{
+            color: @c_DC2728;
+        }
+    }
+    .a-backgound{
+        background: @c_DC2728;
+        color: @c_fff;
+         a{
+            color: @c_fff;
+        }
+    }
+    &:after{
+        .after;
+    }
+}
+.accountcon{
+    width: 100%;
+    table{
+        width: 100%;
+        border: solid 1px #D8D8D8;
+    }
+    td{
+        border: solid 1px #D8D8D8;
+        padding: 15px 20px;
+        color: rgba(74, 74, 74, 1);
+        vertical-align: top;
+        .servertxt{
+            a,span{
+                display: block;
+                text-align: right;
+            }
+            span{
+                color: rgba(130, 130, 130, 1);
+                font-size: 10px;
+            }
+        }
+        .photo{
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            display: inline-block;
+            background: #E1E1E1;
+        }
+        .txtclick{
+            color: #F5A623;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    td.t-color{
+        color: rgba(130, 130, 130, 1);
+    }
+}
+   

@@ -1,0 +1,152 @@
+.headerBox{
+    width: 100%;
+    height: 60px;
+    background: #dc2728;
+    .header{ 
+        width: 80%;
+        min-width: 1002px;
+        margin: 0 auto; 
+        padding: 0 auto;
+        .logo{
+            .H60;
+            color: @c_fff;
+            font-size: 18px;
+            display: inline-block;  
+        }
+        .navigation{ 
+            padding:20px 0 0 22px;
+            display: inline-block;
+            font-size: 14px;
+            a{
+                color: @c_fff;
+                width: 100px; 
+                height: 40px; 
+                display: inline-block;
+                text-align: center;
+                line-height:40px;
+            }
+            a.active{
+                background: @c_fff;
+                color: @c_DC2728;
+            }
+            a:hover{
+                background: @c_fff;
+                color: @c_DC2728;
+            }
+            
+        }
+        .search-Box{
+            display: inline-block;
+            .right;
+            padding-top: 27px;
+            padding-right: 5px;
+            .search{
+                width: 185px;
+                height: 24px;
+                border-radius:2px;
+                display: inline-block;
+                background: @c_fff;
+                i{
+                    width: 14px;
+                    height: 14px;
+                    padding: 5px 5px 0 6px;
+                    float: left;
+                }
+                input{
+                    border: none;
+                    background: none;
+                    height: 23px;
+                    width: 155px;
+                }
+            }
+            span{
+                font-size: 12px; 
+                color: @c_fff; 
+                padding-left: 7px;
+            }
+        }
+        .tips{
+            display:inline-block;
+            .right;
+            font-size: 12px;
+            padding-top: 18px;
+            line-height: 40px;
+            height: 40px;
+            font-size: 0;
+            li{
+                font-size: 12px;
+                display: inline-block;
+                width: 47px;
+                height: 42px;
+                text-align: center;
+                position: relative;
+                 color: @c_fff;
+                a{
+                    color: @c_fff;
+                }
+                .noticeMsg{
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: #F8E71C;
+                    overflow: hidden;
+                    position: absolute;
+                    right: 6px;
+                    top: 10px;
+                }
+                .noticePull{
+                    width: auto;
+                   display: none;
+                    padding: 0 8px;
+                    position: absolute;
+                    top: 42px;
+                    left:-30%;
+                    background:#f6f6f6;
+                    z-index: 9;
+                    a{
+                        min-width: 66px;
+                        white-space: nowrap;
+                        font-size: 10px;
+                        color: #4A4A4A;
+                        line-height: 28px;
+                        display: block;
+                        height: 28px;
+                        border-bottom: solid 1px #e1e1e1;
+                        .text{
+                            max-width: 60px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        &:hover{
+                            color: @c_DC2728;
+                        }
+                        &:nth-last-child(1){
+                            border-bottom: none;
+                        }
+                        span{
+                            &:nth-last-child(1){
+                                color:@c_DC2728;
+                            }
+                        }
+                    }
+                }
+                i.arrow{
+                    width: 10px;
+                    height: 6px;
+                    display: block;
+                    position: absolute;
+                    top: -24px;
+                    left: 50%;
+                    margin-left: -5px;
+                }
+            }
+            li.active{
+                background: @c_fff;
+                a{
+                   color: @c_DC2728; 
+                }
+                
+            }
+        }
+    }
+}
